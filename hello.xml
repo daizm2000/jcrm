@@ -4,7 +4,7 @@
 
  <name>Hello</name>
 
- <!-- The following elements are optionaland free of formatting conttraints -->
+ <!-- The following elements are optionaland free of formatting constraints -->
 
  <creationDate>2007-02-22</creationDate>
 
@@ -20,7 +20,7 @@
 
  <!-- The version string is recorded in the components table -->
 
- <version>1.01</version>
+ <version>3.01</version>
 
  <!-- The description is optional anddefaults to the name -->
 
@@ -62,11 +62,35 @@
 
  
 
+ <install>
+
+  <sql>
+
+    <file charset="utf8" driver="mysql">install.sql</file>
+
+  </sql>
+
+ </install>
+
+ <uninstall>
+
+  <sql>
+
+    <file charset="utf8" driver="mysql">uninstall.sql</file>
+
+  </sql>
+
+ </uninstall>
+
+ 
+
  <administration>
 
   <!-- Administration Menu Section -->
 
   <menu>HelloWorld!</menu>
+
+ 
 
   <!-- Administration Main File Copy Section-->
 
@@ -76,6 +100,10 @@
 
    <filename>index.html</filename>
 
+   <filename>install.sql</filename>
+
+   <filename>uninstall.sql</filename>
+
   </files> 
 
  
@@ -83,3 +111,4 @@
  </administration>
 
 </install>
+
