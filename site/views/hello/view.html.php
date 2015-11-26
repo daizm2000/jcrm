@@ -6,13 +6,13 @@
 
  * @subpackageComponents
 
- * @linkhttp://docs.joomla.org/Developing_a_Model-View-Controller_Component_-_Part_1
+ * @linkhttp://docs.joomla.org/Developing_a_Model-View-Controller_Component_-_Part_2
 
  * @license    GNU/GPL
 
 */
 
-// no direct access
+// No direct access
 
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
@@ -38,13 +38,14 @@ classHelloViewHello extends JView
 
     {
 
-        $greeting = "HelloWorld!";
+        $model = &$this->getModel();
 
-        $this->assignRef( 'greeting', $greeting );
+        $greeting = $model->getGreeting();
+
+        $this->assignRef( 'greeting',       $greeting );
 
         parent::display($tpl);
 
     }
 
 }
-
