@@ -4,7 +4,7 @@
 
  <name>Hello</name>
 
- <!-- The following elements are optionaland free of formatting constraints -->
+ <!-- The following elements are optionaland free of formatting conttraints -->
 
  <creationDate>2007-02-22</creationDate>
 
@@ -44,6 +44,10 @@
 
   <filename>index.html</filename>
 
+  <filename>models/hello.php</filename>
+
+  <filename>models/index.html</filename>
+
   <filename>views/index.html</filename>
 
   <filename>views/hello/index.html</filename>
@@ -72,9 +76,10 @@
 
    <filename>index.html</filename>
 
-  </files>
+  </files> 
+
+ 
 
  </administration>
 
 </install>
-
