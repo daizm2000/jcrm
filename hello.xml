@@ -1,1 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<install type="component" version="1.5.0">
+
+ <name>Hello</name>
+
+ <!-- The following elements are optionaland free of formatting constraints -->
+
+ <creationDate>2007-02-22</creationDate>
+
+ <author>JohnDoe</author>
+
+ <authorEmail>john.doe@example.org</authorEmail>
+
+ <authorUrl>http://www.example.org</authorUrl>
+
+ <copyright>CopyrightInfo</copyright>
+
+ <license>LicenseInfo</license>
+
+ <!-- The version string is recorded in the components table -->
+
+ <version>1.01</version>
+
+ <!-- The description is optional anddefaults to the name -->
+
+ <description>Descriptionof the component ...</description>
+
+ 
+
+ <!-- Site Main File Copy Section -->
+
+ <!-- Note the folder attribute: Thisattribute describes the folder
+
+      to copy FROMin the package to install therefore files copied
+
+      in thissection are copied from /site/ in the package -->
+
+ <files folder="site">
+
+  <filename>controller.php</filename>
+
+  <filename>hello.php</filename>
+
+  <filename>index.html</filename>
+
+  <filename>views/index.html</filename>
+
+  <filename>views/hello/index.html</filename>
+
+  <filename>views/hello/view.html.php</filename>
+
+  <filename>views/hello/tmpl/default.php</filename>
+
+  <filename>views/hello/tmpl/index.html</filename>
+
+ </files>
+
+ 
+
+ <administration>
+
+  <!-- Administration Menu Section -->
+
+  <menu>HelloWorld!</menu>
+
+  <!-- Administration Main File Copy Section-->
+
+  <files folder="admin">
+
+   <filename>hello.php</filename>
+
+   <filename>index.html</filename>
+
+  </files>
+
+ </administration>
+
+</install>
 
