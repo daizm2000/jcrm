@@ -1,2 +1,0 @@
-# jcrm
-joomla with crm
